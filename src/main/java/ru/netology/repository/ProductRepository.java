@@ -18,14 +18,14 @@ public class ProductRepository {
     return items;
   }
 
-  public Product findById(int id) {
+  /*public Product findById(int id) {
     for (Product item : items) {
       if (item.getId() == id) {
         return item;
       }
     }
     return null;
-  }
+  }*/
 
   public void removeById(int id) {
     int length = items.length - 1;

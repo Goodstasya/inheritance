@@ -40,7 +40,7 @@ public class Product {
     this.price = price;
   }
 
-  @Override
+  /*@Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
@@ -62,5 +62,5 @@ public class Product {
         ", name='" + name + '\'' +
         ", price=" + price +
         '}';
-  }
+  }*/
 }

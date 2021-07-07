@@ -4,18 +4,14 @@ import java.util.Objects;
 
 public class Book extends Product {
   private String author;
-  private int pages;
-  private int publishedYear;
 
   public Book() {
     super();
   }
 
-  public Book(int id, String name, int price, String author, int pages, int publishedYear) {
+  public Book(int id, String name, int price, String author) {
     super(id, name, price);
     this.author = author;
-    this.pages = pages;
-    this.publishedYear = publishedYear;
   }
 
   public String getAuthor() {
@@ -26,23 +22,7 @@ public class Book extends Product {
     this.author = author;
   }
 
-  public int getPages() {
-    return pages;
-  }
-
-  public void setPages(int pages) {
-    this.pages = pages;
-  }
-
-  public int getPublishedYear() {
-    return publishedYear;
-  }
-
-  public void setPublishedYear(int publishedYear) {
-    this.publishedYear = publishedYear;
-  }
-
-  @Override
+/*  @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
@@ -65,5 +45,5 @@ public class Book extends Product {
         ", pages=" + pages +
         ", publishedYear=" + publishedYear +
         '}';
-  }
+  }*/
 }
